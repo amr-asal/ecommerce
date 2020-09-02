@@ -224,8 +224,8 @@ color: #777;
 }
 .custom-carousel-indicators-primary
 {
-   top: 235px;
-  right: 41.65%;
+    top: 290px;
+    right: 41.65px;
 }
 .custom-carousel-indicators-primary img
 {
@@ -233,7 +233,7 @@ color: #777;
     width: 75px;
     border: 1px solid rgb(163, 158, 158);
     background-color: white;
-    margin-top: 42px;
+    margin-right: 2px;
     
 }
 .custom-carousel-indicators-primary img.active
@@ -258,9 +258,53 @@ color: #777;
     position: absolute;
     left: 25%;
 }
+.carousel-indicators {
+    right: unset!important;
+}
 .carousel-row>.col-12
 {
     padding: 0px;
 }
-
-
+/*قسم مميزات المتجر*/
+#store-features
+{
+    background-image: url(../images/bg_features.png);
+    background-repeat: no-repeat;
+    box-shadow: 0 0 15px #EEf0EA;
+    position: relative;
+    top: -30px;
+    background-color: white;
+    background-size: auto 60%;
+    background-position: -10px -20px;
+    padding-bottom: 35px;
+    padding-top: 5px;
+}
+#store-features .feature>img
+{
+    height: 40px;
+    margin-bottom: 10px;
+}
+#store-features .feature+.feature
+{
+    border-right: 1px solid rgb(145, 139, 139);
+}
+h3.custom-heading
+{
+    font-size: 24px;
+    margin: 20px 0 25px;
+}
+.custom-thumbnail
+{
+    border: 2px solid rgb(145, 139, 139);
+    padding: 8px;
+    cursor: pointer;
+}
+.custom-thumbnail:hover
+{
+   border-color: rgb(45, 45, 197);
+}
+.custom-thumbnail h4
+{
+    font-size: 180px;
+    padding: 10px;
+}
