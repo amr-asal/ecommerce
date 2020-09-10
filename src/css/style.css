@@ -666,7 +666,87 @@ padding-bottom:15px;
 }
 
 
+/************************************
+************************************
+*********عربة الشراء****************
+*************************************/
+h1.custom-heading{
+    margin: 25px 0;
+    font-size: 36px;
+}
+.custom-table .custom-media .media-object{
+    height: 80px;
+    width: 80px;
+    border: 1px solid #EBEBEb;
+    margin-left: 10px !important;
+}
+.custom-table th ,.custom-table td{
+    padding: 15px;
+    border-bottom: 1px solid #EBEBEb;
+    border-top: 1px solid #EBEBEb;
+    font-size: 120%;
+}
+.custom-table th:first-child,
+.custom-table td:first-child{
+    width: 50%;
+}
+.custom-table th {
+    font-weight: normal;
+    color: #c2c2c2;
+}
+.custom-table th :not(:first-child),
+.custom-table td :not(:first-child){
+    text-align: center;
+}
+.custom-table .custom-media h4{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.custom-table .quantity{
+    width: 56px;
+    height: 34px !important;
+    text-align: center;
+    padding: 0px 8px;
+    display: block;
+    margin: 0 auto;
+}
+.btn.custom-btn-danger{
+    color:rgb(255, 160, 160);
+    border-color:rgb(255, 160, 160);
+    background-color: transparent;
+    border-radius: 3px;
+}
+.btn.custom-btn-danger:active .btn.custom-btn-danger:active:hover .btn.custom-btn-danger:active:focus
+.btn.custom-btn-danger:focus .btn.custom-btn-danger:hover{
+    color:rgb(235, 20, 20);
+    border-color:rgb(235, 20, 20);
+    background-color: transparent;
+}
+.custom-table .custom-media{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.custom-table th:first-child{
+    padding-right: 20px;
+}
 
+.custom-table tfoot td{
+    border-bottom: none;
+    font-size: 150%;
+}
+#form-checkout button[type="submit"]{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.custom-table .total-price *{
+    color: black;
+}
+.custom-table .total-price .custom-text-muted  .custom-text-muted{
+    color:#a9a9a9;
+}
 
 /***********************************
 ***********************************
@@ -762,6 +842,12 @@ padding-bottom:15px;
         margin: 10px;
         font-size: 20px;
     }
+
+    /*checkout Page*/
+    #form-checkout, .table-title{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
@@ -805,6 +891,10 @@ padding-bottom:15px;
      #newsletter form .input-group{
          width: 100%;
      }
+     /*checkout Page*/
+    .custom-table .hide-on-small{
+        display: none;
+    }
 }
 @media (max-width : 575px) {
     .form-inline .custom-form-control{
@@ -824,5 +914,10 @@ padding-bottom:15px;
     #form-product-selection,.comments{
         padding-right: 50px;
         padding-left: 50px;
+    }
+      /*checkout Page*/
+      #form-checkout{
+        padding-right: 0px;
+        padding-left: 0px;
     }
 }
