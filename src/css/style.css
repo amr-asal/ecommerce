@@ -761,6 +761,95 @@ h1.custom-heading{
 }
 
 
+/************************************
+*************************************
+********Search Page******************
+*************************************
+***********************************/
+#form-advanced-search{
+    border: 1px solid rgb(223, 215, 215);
+   padding-bottom: 20px;
+   margin-bottom: 35px;
+   display: table;
+}
+#form-advanced-search .custom-panel{
+    border: none !important;
+    padding: 5px;
+}
+.custom-panel .card-header{
+    background-color: transparent;
+    margin-bottom: 15px;
+    padding: 7px 10px 13px !important;
+}
+.custom-list-group>.list-group-item{
+    border: none !important;
+    padding:0 10px 14px 0; 
+}
+.custom-list-group>.list-group-item:last-child{
+    padding-bottom:0px ;
+}
+.custom-list-group{
+    border-bottom: 1px solid rgb(224, 219, 219);
+}
+
+#form-advanced-search input[type=checkbox]+label{
+    cursor: pointer;
+    font-weight: bold;
+}
+.ui-slider{
+    margin: 25px 0 35px;
+    height: 2px;
+    background-color: #c5c5c5;
+}
+.ui-slider .ui-slider-handle{
+    background-color: orange !important;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    border: none;
+}
+.ui-slider .ui-slider-range{
+    border: 6px solid orange !important;
+}
+#form-advanced-search button{
+    font-size: 18px !important;
+    padding: 9px 0 !important;
+}
+
+.custom-pagination li a{
+    height: 32px;
+    width: 32px;
+    line-height:32 px;
+    border: 1px solid #EBEBEb;
+    color: #c2c2c2;
+    margin-right: 3px;
+    margin-left: 3px;
+    display: inline-block;
+    text-align: center;
+}
+.custom-pagination li.active a{
+    background-color: orange;
+    color: white;
+    border-color:orange ;
+}
+.custom-pagination{
+    margin: 25px 0;
+}
+.custom-pagination li a:active,
+.custom-pagination li a:hover,
+.custom-pagination li a:focus{
+    border-color: orange;
+    color: orange;
+}
+#search-results .custom-thumbnail{
+   margin-right:-8px;
+    margin-left: -8px;
+}
+
+
+#search-results h3.heading-with-border-bottom{
+    margin-top: 0px;
+}
 /***********************************
 ***********************************
 **********MEDIA QUERY************************
@@ -861,6 +950,16 @@ h1.custom-heading{
         padding-right: 15px;
         padding-left: 15px;
     }
+    /*Search Page*/
+    .custom-panel .custom-list-group{
+        border-bottom:none;
+    }
+    #search-pagination .custom-pagination{
+        text-align: center !important;
+    }
+   .custom-pagination{
+        display: inline-flex !important;
+    }
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
@@ -907,6 +1006,12 @@ h1.custom-heading{
      /*checkout Page*/
     .custom-table .hide-on-small{
         display: none;
+    }
+    #search-pagination{
+        text-align: center;
+    }
+    .custom-pagination{
+        display: inline-flex;
     }
 }
 @media (max-width : 575px) {
